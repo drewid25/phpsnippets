@@ -1,0 +1,7 @@
+{
+    "[html]": {
+        "files.autoGuessEncoding": false
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+}

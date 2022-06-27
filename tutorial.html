@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/sidebar.css">
+    <link rel="stylesheet" href="CSS/queries.css">
+    <link rel="stylesheet" href="CSS/textcontent.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/general.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid py-2 px-5">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid fixed-top px-5 py-3 bg-light">
+                <a class="navbar-brand" href="#">PHP Snippets.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="installation.html">Installation</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tutorials
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">PHP Syntax</a></li>
+                                <li><a class="dropdown-item" href="#">PHP Variables</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <a class="btn login-btn " href="login.php">login</a>
+
+
+                    </ul>
+
+                </div>
+
+        </nav>
+        <div class="button-container">
+            <button class="btn  d-lg-none mb-3 hamburger" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                <div class="menu-btn">
+                    <div class="menu-btn_burger">
+
+                    </div>
+                </div>
+            </button>
+            <form class="d-flex d-lg-none" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn search-btn" type="submit">Search</button>
+            </form>
+        </div>
+
+
+
+        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-lg-none canvas">
+                <ul>
+
+                    <li><a href=" index.html">Home</a></li>
+                    <li><a href=" installation.html">Installation</a></li>
+                    <li><a href="installation.html">Get Started</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown button
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row d-flex content-row">
+
+            <div class="col-lg-2 d-none d-lg-block py-5" id="sidebar">
+                <ul>
+                    <h2>PHP Tutorial</h2>
+                    <li class="menu-item">
+                        <a href="">PHP Syntax</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Variables</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Echo/Print</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="">PHP Data Types</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-sm-12 text-content">
+
+                <h1>How to install</h1>
+
+                <p>To start using PHP, you can:</p>
+                <ul>
+                    <li>Find a web host with php and MySql support</li>
+                    <li>Install a web server on your own PC, and then install PHP and MySql</li>
+
+
+                </ul>
+
+                <br>Many PHP developers like to build their websites and test on localhost before publishing to live
+                server.<br>To build local web server environment on Windows computer, <br>For it you need to Install
+                XAMPP
+                on
+                Windows.</br> Then you can test your code much more quickly because you don’t need to deploy it to the
+                live
+                server <br>every time you make a change. Once all changes are completed you deploy once.</p>
+                <h2>What is XAMPP?</h2>
+                <p><strong>XAMPP</strong> is a free distribution package that makes it easy to install Apache Web
+                    Server,
+                    PHP,
+                    Perl and MySQL.<br> It is a simple, lightweight Apache distribution, it’s extremely easy to use for
+                    developers to create a <br>local web server for testing purposes.</p>
+                <h2>Download and Install XAMPP On Windows</h2>
+                <p>To download and install XAMPP on your windows use the following steps:</p>
+                <p>1. Got to <a href="https://www.apachefriends.org/index.html">Apache Friends Website </a> to download
+                    the
+                    latest version of XAMPP for Windows.</p>
+                <div>
+                    <img src="images/Apache .png" alt="" class="img-fluid">
+                </div>s
+
+                <p>2. After download, click the xampp-windows-x64-8.1-.6-0-VS16-installer.exe file to launch the
+                    installer
+                </p>
+                <p>During the installation process, sometimes you may receive warnings such as Important notice.
+                    <br>Just
+                    click
+                    ok and proceed with the installation.
+                </p>
+                <div>
+                    <img src="images/Warning.png" alt="" class="img-fluid">
+
+                </div>
+                <p>3. Next you will see the <strong>Welcome to the XAMPP Setup Wizard screen.</strong> Click the
+                    <strong>Next</strong> button to continue.
+                </p>
+                <div>
+                    <img src="images/setup.png" alt="" class="img-fluid">
+
+                </div>
+                <p>4. All components are checked by default so no need to change anything and click the
+                    <strong>Next</strong>
+                    button to continue.
+                </p>
+                <div>
+                    <img src="images/selectcomponents.png" alt="" class="img-fluid">
+
+                </div>
+                <p>5. Next you can choose a folder to install XAMPP, in my case it’s <strong>C:/xampp</strong> as i am
+                    installing XAMPP in <strong>drive C</strong>,<br> you can set yours where you would like to install
+                    and
+                    click the <strong>Next</strong> button to continue. </p>
+                <div>
+                    <img src="images/selectfolder.png" alt="" class="img-fluid">
+
+                </div>
+                <p>6. Then you will be prompted to choose a language. Just choose English and click the
+                    <strong>Next</strong>
+                    button to continue.
+                </p>
+                <div>
+                    <img src="images/chooselanguage.png" alt="" class="img-fluid">
+                </div>
+                <p>7. A Bitnami info will show up . If you want to learn more about bitnami leave <br> the checkbox
+                    checked
+                    else
+                    unchecked it and click the <strong>Next</strong> button to continue.. </p>
+                <div>
+                    <img src="images/bitnami.png" alt="" class="img-fluid">
+                </div>
+                <p>8. After the installation is done just click <strong>Finish</strong> and a XAMPP control Panel will
+                    show
+                    up.
+                </p>
+                <div>
+                    <img src="images/XAMPP.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+.text-content{
+    background-color: #fff;
+    padding:3rem 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.text-content h2{
+    font-weight: bold;
+}
+
+.text-content p,img{
+    margin-bottom: 1.5rem;
+}
+
+
+img{
+    width: 100%;
+}
+
+h1{
+    background-color: var(--accent-color);
+    color:#fff;
+    padding:.5rem 1rem
+}
+img{
+  border-radius: 10px;
+  border:1px solid black
+}
