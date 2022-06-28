@@ -8,19 +8,14 @@
     .header{
         height:50vh;
     }
-    img{
-        width:60%;
-    }
-    .text-content{
+   .text-content{
       margin-left: 24rem;
     }
    
 }
 
 @media(max-width:375px){
-    .col1{
-        position: hidden;
-    }
+  
      
 }
 @media screen and (max-width: 992px) {
