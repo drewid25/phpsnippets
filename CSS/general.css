@@ -1,5 +1,5 @@
 :root{
-  --primary-color:#dbe4ff;
+  --primary-color:#edf2ff;
   --accent-color:#5f3dc4;
   --text-color:#495057;
 }
@@ -19,13 +19,19 @@ body{
     font-size: 2rem;
     font-weight:400;
     color:var(--text-color);
-background-color:#fff;
+    background-color:#fff;
+}
+
+h1{
+    font-size:2.5rem
 }
 
 .btn{
       background-color:var(--accent-color);
       color:#f2f2f2;
-      font-size: 2.5rem;
+      text-transform: uppercase;
+      font-size: 2rem;
       border-radius: 10px;
+      margin-right: 2rem;
    
 }

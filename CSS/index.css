@@ -1,11 +1,18 @@
-/* Header */
+
+
+/******************/
+/*    Header      */
+/******************/
 .header{
-    background-color:#f8f9fa  ;
     width:100vw;
-    height:100vh;
+    height:75vh;
+    margin-bottom: 5rem;
+    background-color: var(--primary-color);
 }
 
-/* navbar */
+/******************/
+/*      Navbar    */
+/******************/
 .navbar-nav{
     margin-left: 40rem;
 } 
@@ -17,12 +24,12 @@
      text-transform: uppercase;
     }
 .nav-link{
-  font-size:1.5rem;
+    font-size:1.5rem;
     margin-right: 2rem;
     }
 .nav-item{
     margin-left:2rem;
-    font-size:2rem ;
+    font-size:1.5rem ;
     text-transform: uppercase;
 }
 .nav-link:hover{
@@ -35,52 +42,46 @@
    text-transform:uppercase;
 }
 
-/* Hero section */
+/******************/
+/*  Hero Section  */
+/******************/
 .hero{
-    margin-top: 2rem;
-    padding:5rem;
-    text-align: center;
-    height: 100vh;
-    width:100vw;
-}
+    padding:2rem;
+  }
 .hero-title{
-    font-size: 7rem;
+    font-size:4rem;
     text-align: center;
     font-weight: 900;
+    margin:2rem 0 3.5rem ;
 }
-.lesson{
-    margin-top: 2rem;
-}
-
-/* Info Section */
-
-.info-container{
-  background-color: blue;
-  height:300px;
-}
-.info{
-  margin-top: 5rem;
-}
-.column{
-  max-height:20rem;
+.row{
+  justify-content: center;
 }
 
-.info-heading{
-   color:var(--text-color);
-   font-weight: 600;
-   text-align: center;
-   font-size: 3rem;
-   margin-bottom: 5rem;
- 
+.btn-div{
+  max-width: 100%;
+  margin:0 auto;
+
+  margin: 5rem 0;
 }
-.info-row{
-   padding:0 3rem;
+input{
+  margin-right: .5rem;
 }
-.info-title{
-  font-size: 3rem;
-  margin-bottom: 2rem;
-  font-weight: 900;
+form{
+  margin-left: 2rem;;
 }
+
+span{
+  color: var(--accent-color);
+}
+.hero-text{
+  text-align: center;
+  line-height: 1;
+}
+
+
+
+
 
     
 
@@ -102,18 +103,7 @@
 }
 
 
-.learn a{
-    width:100%;
-   }
-  .learn a:hover{
-    color:#7048e8;;
-   }
-.learn-title{
-     font-size: 4rem;
-     font-weight:weight(bold);
-     text-align: center;
-    margin-bottom: 5rem;;
- }
+
 
 
 
@@ -186,7 +176,7 @@ h4{
   font-size: 1.5rem;
   font-weight: 900;
 }
-/* header */
+
 
 
 
@@ -195,7 +185,7 @@ h4{
 	z-index: 500;
 	background-color:#ffff;
 	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
-  	transition: all 0.5s ease;
+  transition: all 0.5s ease;
 	margin-top:25px;
 	opacity:0;
 	visibility: hidden;
@@ -218,6 +208,14 @@ h4{
 .navbar-nav .sub-menu.mega-menu-column-4 .list-item{
   flex:0 0 25%;
   padding:0 1.5rem;
+ 
+}
+.navbar-nav .sub-menu.mega-menu-column-4 .list-item a{
+
+  color:var(--accent-color)
+}
+.navbar-nav .sub-menu.mega-menu-column-4 .list-item a:hover{
+color:var(--text-color)
 }
 @media(min-width: 992px){
 .navbar-nav li.menu-item-has-children:hover .sub-menu{
@@ -229,8 +227,66 @@ h4{
 .navbar > ul > li .sub-menu > ul > li{
 	line-height: 1;
 }
+.tutorial-link{
+  text-transform: uppercase;
+  color:var(--text-color)
+}
+.tutorial-link:hover{
+  color:var(--accent-color)
+}
 
-/* lesson */
-/* sidebar */
+span{
+  margin-left: .5rem;
+}
 
-    
+/******************/
+/*  LOGO SECTION  */
+/******************/
+
+.featured-heading{
+  text-align: center;
+  text-transform: uppercase;
+  color:var(--text-color);
+  font-size:2.4rem;
+  margin-bottom: 4rem;
+}
+.logos{
+  display: flex;
+  gap:2rem;
+  justify-content: space-around;
+ 
+}
+
+.logos img{
+  height:4rem;
+  filter: brightness(0);
+  opacity:90% ;
+}
+
+/***********************/
+/*  Advantages Section*/
+/**********************/
+.advantage-heading{
+  text-transform: uppercase;
+   font-weight:600;
+   margin-bottom:5rem;
+   font-size: 2.5rem;
+}
+.advantage-card{
+   margin-bottom: 10rem;
+}
+.advantage-title{
+  color:var(--accent-color);
+  font-weight:900;
+}
+.advantage-card img{
+  height:40rem;
+}
+
+.card{
+  width:100%;
+}
+
+.column{
+  padding:2rem;
+}
