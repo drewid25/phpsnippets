@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,300;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8ae592a67f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/sidebar.css">
+    <link rel="stylesheet" href="../CSS/queries.css">
+    <link rel="stylesheet" href="../CSS/textcontent.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/general.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navigation-var py-2 px-5">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid fixed-top px-5 py-3 bg-light">
+                <a class="navbar-brand" href="index.html">PHP Snippets.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="installation.html">Installation</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tutorials
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">PHP Syntax</a></li>
+                                <li><a class="dropdown-item" href="#">PHP Variables</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <a class="btn login-btn " href="login.php">login</a>
+
+
+                    </ul>
+
+                </div>
+
+        </nav>
+    </div>
+    <div class="button-container">
+
+        <button class="btn  d-lg-none mb-3 hamburger" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+            <div class="menu-btn">
+                <div class="menu-btn_burger">
+
+                </div>
+            </div>
+        </button>
+        <a href="index.html" class="home-icon d-lg-none"><i class="fa-solid fa-house"></i></a>
+    </div>
+
+
+
+    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
+        aria-labelledby="offcanvasResponsiveLabel">
+        <div class="offcanvas-header">
+
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-lg-none canvas">
+            <ul>
+
+
+                <li><a href=" installation.html">Installation</a></li>
+                <li class="nav-active"><a href="installation.html">Get Started</a></li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex content-row">
+
+            <div class="col-lg-2 d-none d-lg-block py-5" id="sidebar">
+                <ul>
+                    <li><a href="installation.html">Installation</a></li>
+                    <li class="nav-active"><a href="getstarted.html">Get Started</a></li>
+                    <li><a href="tutorial.html">Tutorials</a></li>
+
+
+                </ul>
+            </div>
+            <div class="col-lg-10 col-sm-12 text-content">
+
+                <h1 class="mb-5">Get Started </h1>
+
+                <p class="mb-5">1. Open the XAMPP app in your machine. Initialize the XAMPP server by pressing the start
+                    button at the
+                    right side of
+                    Apache and MySql module.
+                </p>
+                <div>
+                    <img src="../images/GetStarted/XAMPPinstruction.png" alt="" class="img-fluid installation-img mb-5">
+                </div>
+
+                <p>2. After initializing the XAMPP server, locate the XAMPP folder inside your machine.<br> In my case I
+                    installed the XAMPP
+                    inside my drive C:\. Next step is to open your command line and do the following steps.
+                    <br>*Make sure you are in the C:\ drive before you perform the steps. If not just type cd .. until
+                    you
+                    reach the c:\ .
+                </p>
+                <ul class="mb-5">
+                    <li><span>Step 1.</span>Inside the command line type cd XAMPP to go to XAMPP folder.</li>
+                    <li><span>Step 2.</span>Type cd htdocs to go htdocs folder.</li>
+                    <li><span>Step 3.</span>Inside htdocs create a folder. type mkdir foldername to make a folder.</li>
+                    <li><span>Step 4.</span>Type cd foldername to open the folder.</li>
+                    <li><span>Step 5.</span>Type code . to open the folder inside vscode.</li>
+                </ul>
+
+                <div>
+                    <img src="../images/GetStarted/Cmd.png" alt="Command-line" class="img-fluid installation-img mb-5">
+                </div>
+                <p class="mb-5">3. Once the folder is open in VScode. Create a new file and name it index.php press
+                    enter.
+
+                </p>
+                <div>
+                    <img src="../images/GetStarted/PHPvscode.png" alt="PHPvscode"
+                        class="img-fluid installation-img mb-5">
+
+                </div>
+                <p class="mb-5">4. After creating an index.php file initialize the php by copying the code below.
+                    .
+                </p>
+                <div>
+                    <img src="../images/GetStarted/FirstPHPtest.png" alt="PHP-Test"
+                        class="img-fluid installation-img mb-5">
+
+                </div>
+                <p class="mb-5">5. Then open your browser and type localhost/foldername/index.php and you will be able
+                    to see the
+                    Hello World output on
+                    your screen as seen below. </p>
+                <div>
+                    <img src="../images/GetStarted/InitialPhpbrowser.png" alt="InitialPhpbrowser"
+                        class="img-fluid installation-img mb-5">
+
+                </div>
+                <p class="mb-5">6. Congrats ! you have started a php program.
+                </p>
+                <a href="tutorial.html">Go to Tutorial </a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

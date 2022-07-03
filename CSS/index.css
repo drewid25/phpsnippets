@@ -13,6 +13,9 @@
 /******************/
 /*      Navbar    */
 /******************/
+.nav-active{
+  border-bottom: 2px solid var(--accent-color);
+}
 .navbar-nav{
     margin-left: 40rem;
 } 

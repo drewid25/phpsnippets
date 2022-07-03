@@ -1,3 +1,42 @@
+/******************/
+/*      Navbar    */
+/******************/
+.nav-active{
+  border-right: 3px solid var(--accent-color);
+  background-color: var(--primary-color);
+}
+.navigation-var{
+  margin-bottom:5rem;
+}
+.navbar-nav{
+    margin-left: 40rem;
+} 
+
+.navbar-brand{
+    font-weight: bold;
+     font-size:3rem; 
+     color:var(--accent-color);
+     text-transform: uppercase;
+    }
+.nav-link{
+    font-size:1.5rem;
+    margin-right: 2rem;
+    }
+.nav-item{
+    margin-left:2rem;
+    font-size:1.5rem ;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+   color:var(--accent-color)
+}
+
+.login-btn{
+   padding:.2rem 2rem;
+   font-size: 1.5rem;
+   text-transform:uppercase;
+}
+
 .canvas ul li{
   list-style: none;
   padding:1rem 20px;
@@ -17,7 +56,7 @@ text-decoration: none;
 #sidebar{
     position: fixed;
     width: 20rem;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     top: 8rem;
     bottom: 0;
 }
@@ -35,15 +74,21 @@ text-decoration: none;
 
 }
 
+.button-container a{
+ 
+color:#fff;
+
+}
+
 .button-container{
   
 display: flex;
-justify-content: space-between;
+
 align-items: center;
-background-color: #fff;
-padding:0 2rem;
-margin:1.5rem;
-margin-bottom: .5rem;
+background-color: var(--accent-color);
+padding:0 1rem;
+margin:3rem;
+margin-bottom: 1rem;
 }
 .menu-btn{
   position: relative;
@@ -116,7 +161,7 @@ margin-bottom: .5rem;
     color:#fff;
 }
 .menu-item:hover{
-    background-color: white;
+    background-color: var(--primary-color);
    
 }
 
