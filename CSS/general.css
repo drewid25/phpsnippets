@@ -35,3 +35,38 @@ h1{
       margin-right: 2rem;
    
 }
+
+
+.faqs{
+    text-align: center;
+    font-weight: 900;
+    font-size: 2.5rem;
+
+}
+
+.footer{
+    background-color: var(--primary-color);
+    height:30rem;
+ 
+}
+.footer-div{
+    display: flex;
+    gap:5rem;
+    padding: 5rem;
+}
+
+.footer-div p{
+    font-size:1rem;
+}
+
+.footer-head{
+    font-size: 2rem;
+    color:var(--accent-color)
+}
+
+.footer-ref{
+    color:var(--accent-color)
+}
+
+
+
