@@ -55,7 +55,7 @@ text-decoration: none;
 
 #sidebar{
     position: fixed;
-    width: 23rem;
+    width: 20rem;
     /* overflow-y: scroll; */
     top: 8rem;
     bottom: 0;

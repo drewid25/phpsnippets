@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../CSS/textcontent.css">
     <link rel="stylesheet" href="../CSS/sidebar.css">
     <link rel="stylesheet" href="../CSS/general.css">
-    <link rel="stylesheet" href="../CSS/example.css">
+
 
     <title>PHP Snippets</title>
 </head>
@@ -39,26 +39,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link active " aria-current="page"
-                                href="../Pages/installation.html">Installation</a>
-                        </li>
+                        <a href="../Pages/index.html" class="home" style="margin-right:1rem;"><i class=" fa-solid
+                                                                                                fa-house"></i>Home</a>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Tutorials
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">PHP Syntax</a></li>
-                                <li><a class="dropdown-item" href="#">PHP Variables</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <a class="btn login-btn " href="login.php">login</a>
+                        <form action="" class="d-flex">
+                            <input type="text" style="margin-right:1rem;">
+                            <button class="btn btn-search" type="submit">Search</button>
+                        </form>
+
 
 
                     </ul>
@@ -84,19 +72,46 @@
     <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
         aria-labelledby="offcanvasResponsiveLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
-                aria-label="Close"></button>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-lg-none canvas">
             <ul>
 
-                <li><a href="../Pages/index.html">Home</a></li>
+                <li><a href="../Pages/index.html" class="home" style="margin-right:1rem;"><i class=" fa-solid
+                                                        fa-house"></i>Home</a></a></li>
                 <li><a href="../Pages/installation.html">Installation</a></li>
                 <li><a href="../Pages/getstarted.html">Get Started</a></li>
-                <li>
-
+                <li><a href="#">Tutorial</a></li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Intro.html">PHP Intro</a>
                 </li>
+                <li class="menu-item">
+                    <a href="../tutorial/Syntax.html">PHP Syntax</a>
+                </li>
+                <li class="menu-item nav-active">
+                    <a href="#">PHP Comments</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Variables.html">PHP Variables</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/VariableScope.html">PHP Variables Scope</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/EchoPrint.html">PHP Echo and Print</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Datatypes.html">PHP Data Types</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Strings.html">PHP Strings</a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="../tutorial/Constants.html">PHP Constants</a>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -111,16 +126,32 @@
                     <li class="menu-item nav-active">
                         <a href="#">PHP Intro</a>
                     </li>
+
                     <li class="menu-item">
                         <a href="../tutorial/Syntax.html">PHP Syntax</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/Comments.html">PHP Comments</a>
                     </li>
                     <li class="menu-item">
                         <a href="../tutorial/Variables.html">PHP Variables</a>
                     </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/VariableScope.html">PHP Variables Scope</a>
+                    </li>
                     <li class="menu-item">
                         <a href="../tutorial/EchoPrint.html">PHP Echo/Print</a>
                     </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/Datatypes.html">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/Strings.html">PHP Strings</a>
+                    </li>
 
+                    <li class="menu-item ">
+                        <a href="../tutorial/Constants.html">PHP Constants</a>
+                    </li>
 
                 </ul>
 
@@ -153,60 +184,63 @@
                 <li>
                     PHP files have extension ".php"
                 </li>
-                <h2 class="mb-5">Example Codes</h2>
-                <div class="example">
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left;">&lt;!DOCTYPE&nbsp;html&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&lt;html&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Example&lt;/title&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span
-                        style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 0, 187)">&lt;?php<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span
-                        style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 119, 0)">echo&nbsp;</span>
-                    <span
-                        style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(221, 0, 0)">"Hi,&nbsp;I'm&nbsp;a&nbsp;PHP&nbsp;script!"</span>
-                    <span
-                        style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 119, 0)">;<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span
-                        style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 0, 187)">?&gt;<br />
-                    </span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</span>
-                    <br
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
-                    <span
-                        style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&lt;/html&gt;</span>
 
+                <div class="example">
+                    <h2>Example Codes</h2>
+                    <div class="code-examples">
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left;">&lt;!DOCTYPE&nbsp;html&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&lt;html&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Example&lt;/title&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span
+                            style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 0, 187)">&lt;?php<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span
+                            style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 119, 0)">echo&nbsp;</span>
+                        <span
+                            style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(221, 0, 0)">"Hi,&nbsp;I'm&nbsp;a&nbsp;PHP&nbsp;script!"</span>
+                        <span
+                            style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 119, 0)">;<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span
+                            style="font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255); color: rgb(0, 0, 187)">?&gt;<br />
+                        </span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</span>
+                        <br
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)" />
+                        <span
+                            style=" font-family: &quot;Fira Mono&quot;, &quot;Source Code Pro&quot;, monospace; font-size: 14px; text-align: left; background-color: rgb(255, 255, 255)">&lt;/html&gt;</span>
+                    </div>
                 </div>
             </ul>
+            <a href="Syntax.html" class="btn">Next</a>
         </div>
 
 

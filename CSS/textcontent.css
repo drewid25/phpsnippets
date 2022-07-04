@@ -13,6 +13,16 @@
     margin-bottom: 1.5rem;
 }
 
+.text-content li{
+    margin-left:2rem;
+}
+
+
+.pspan{
+  color:var(--accent-color);
+    background-color: var(--primary-color);
+}
+
 
 .installation-img{
     width: 100%;
@@ -21,9 +31,27 @@
 h1{
     background-color: var(--accent-color);
     color:#fff;
-    padding:.5rem 1rem
+    padding:.5rem 1rem;
+    font-size:3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-weight: 900;
 }
 img{
   border-radius: 10px;
   border:1px solid black
 }
+i{
+    color:var(--accent-color);
+    margin-right:1rem;
+}
+
+.home{
+    text-decoration: none;
+    color:var(--accent-color)
+}
+
+

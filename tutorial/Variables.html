@@ -38,26 +38,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item">
-                            <a class="nav-link active " aria-current="page"
-                                href="../Pages/installation.html">Installation</a>
-                        </li>
+                        <a href="../Pages/index.html" class="home" style="margin-right:1rem;"><i class=" fa-solid
+                                                                                                fa-house"></i>Home</a>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Tutorials
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">PHP Syntax</a></li>
-                                <li><a class="dropdown-item" href="#">PHP Variables</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <a class="btn login-btn " href="login.php">login</a>
+                        <form action="" class="d-flex">
+                            <input type="text" style="margin-right:1rem;">
+                            <button class="btn btn-search" type="submit">Search</button>
+                        </form>
+
 
 
                     </ul>
@@ -83,19 +71,46 @@
     <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
         aria-labelledby="offcanvasResponsiveLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive"
-                aria-label="Close"></button>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
+                data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body d-lg-none canvas">
             <ul>
 
-                <li><a href="../Pages/index.html">Home</a></li>
+                <li><a href="../Pages/index.html" class="home" style="margin-right:1rem;"><i class=" fa-solid
+                                                        fa-house"></i>Home</a></a></li>
                 <li><a href="../Pages/installation.html">Installation</a></li>
                 <li><a href="../Pages/getstarted.html">Get Started</a></li>
-                <li>
-
+                <li><a href="#">Tutorial</a></li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Intro.html">PHP Intro</a>
                 </li>
+                <li class="menu-item">
+                    <a href="../tutorial/Syntax.html">PHP Syntax</a>
+                </li>
+                <li class="menu-item nav-active">
+                    <a href="#">PHP Comments</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Variables.html">PHP Variables</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/VariableScope.html">PHP Variables Scope</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/EchoPrint.html">PHP Echo and Print</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Datatypes.html">PHP Data Types</a>
+                </li>
+                <li class="menu-item ">
+                    <a href="../tutorial/Strings.html">PHP Strings</a>
+                </li>
+
+                <li class="menu-item ">
+                    <a href="../tutorial/Constants.html">PHP Constants</a>
+                </li>
+
             </ul>
         </div>
     </div>
@@ -113,11 +128,27 @@
                     <li class="menu-item">
                         <a href="../tutorial/Syntax.html">PHP Syntax</a>
                     </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/Comments.html">PHP Comments</a>
+                    </li>
                     <li class="menu-item nav-active">
                         <a href="#">PHP Variables</a>
                     </li>
                     <li class="menu-item ">
+                        <a href="../tutorial/VariableScope.html">PHP Variables Scope</a>
+                    </li>
+                    <li class="menu-item ">
                         <a href="../tutorial/EchoPrint.html">PHP Echo and Print</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/Datatypes.html">PHP Data Types</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="../tutorial/Strings.html">PHP Strings</a>
+                    </li>
+
+                    <li class="menu-item ">
+                        <a href="../tutorial/Constants.html">PHP Constants</a>
                     </li>
 
 
@@ -127,15 +158,82 @@
         </div>
         <div class="col-lg-10 col-sm-12 text-content">
 
-            <h1>PHP Syntax</h1>
+            <h1 class="mb-5">PHP Variables</h1>
+            <h2>Creating (Declaring) PHP Variables</h2>
+            <p>A variable in PHP begins with the $ sign, followed by the variable name:</p>
 
-            <p>A PHP script is executed on the server, and the plain HTML result is sent back to the browser.</p>
+            <div class="example mb-5">
+                <h2>Example</h2>
+                <div class="code-examples">
+                    <span class="phptagcolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">&lt;?php</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">$txt
+                        =<span>&nbsp;</span></span>
+                    <span class="phpstringcolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">"Hello
+                        world!"</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">;</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">$x
+                        =<span>&nbsp;</span></span>
+                    <span class="phpnumbercolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">5</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">;</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">$y
+                        =<span>&nbsp;</span></span>
+                    <span class="phpnumbercolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">10.5</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">;</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span class="phptagcolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">?&gt;</span>
 
-            <p>"A PHP script starts with"<code><?php</code>"and ends with" <code>?></code>":"</p>
+                </div>
+            </div>
+
+            <p>The value Hello world will be stored in the variable $txt following the execution of the aforementioned
+                lines.
+                <br>Specifically, the value 5 will be stored in variable $x, while the value 10.5 will be stored in
+                variable
+                $y.
+            </p>
+
+            <p><strong>Note:</strong> When you assign a text value to a variable, put quotes around the value.</p>
+            <p><strong>Note:</strong> Unlike other programming languages, PHP has no command for declaring a variable.
+                It
+                is created the moment you first
+                assign a value to it.</p>
+            <p>Think of variables as containers for storing data</p>
+            <h2>PHP Variables</h2>
+            <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+            </p>
+            <p>Rules for PHP variables:</p>
+            <ul>
+
+                <li>A variable starts with the $ sign, followed by the name of the variable</li>
+                <li>A variable name must start with a letter or the underscore character</li>
+                <li>A variable name cannot start with a number</li>
+                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+                </li>
+                <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
 
 
-
-
+            </ul>
+            <h4 class="mb-5">*Remember that PHP variable names are case-sensitive!</h4>
+            <a href="Comments.html" class='btn'>Previous</a>
+            <a href="VariableScope.html" class="btn">Next</a>
         </div>
 
 

@@ -47,7 +47,6 @@
                         </form>
 
 
-
                     </ul>
 
                 </div>
@@ -125,19 +124,19 @@
                     <li class="menu-item ">
                         <a href="../tutorial/Intro.html">PHP Intro</a>
                     </li>
-                    <li class="menu-item nav-active">
-                        <a href="#">PHP Syntax</a>
+                    <li class="menu-item">
+                        <a href="../tutorial/Syntax.html">PHP Syntax</a>
                     </li>
                     <li class="menu-item ">
                         <a href="../tutorial/Comments.html">PHP Comments</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="../tutorial/Variables.html">PHP Variables</a>
+                    <li class="menu-item ">
+                        <a href="#">PHP Variables</a>
                     </li>
                     <li class="menu-item ">
                         <a href="../tutorial/VariableScope.html">PHP Variables Scope</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item ">
                         <a href="../tutorial/EchoPrint.html">PHP Echo and Print</a>
                     </li>
                     <li class="menu-item ">
@@ -147,9 +146,10 @@
                         <a href="../tutorial/Strings.html">PHP Strings</a>
                     </li>
 
-                    <li class="menu-item ">
+                    <li class="menu-item nav-active">
                         <a href="../tutorial/Constants.html">PHP Constants</a>
                     </li>
+
 
 
                 </ul>
@@ -158,91 +158,98 @@
         </div>
         <div class="col-lg-10 col-sm-12 text-content">
 
-            <h1 class="mb-5">PHP Syntax</h1>
+            <h1 class="mb-5">PHP Constants</h1>
 
-            <p>A PHP script is executed on the server, and the plain HTML result is sent back to the browser.</p>
+            <p>Constants are like variables except that once they are defined they cannot be changed or undefined.</p>
 
-            <p>A PHP script starts with &lt?php and ends with ?&gt;:
-
+            <h2>PHP Constants</h2>
+            <p>A constant is an identifier (name) for a simple value. The value cannot be changed during the script.
             </p>
+            <p>A valid constant name starts with a letter or underscore (no $ sign before the constant name).
+            </p>
+            <p><strong>Note:</strong>Unlike variables, constants are automatically global across the entire script. </p>
+            <h2>Create a PHP Constant</h2>
+            <p>To create a constant, use the define() function.</p>
+            <h3>Syntax</h3>
             <div class="example mb-5">
-                <p> &lt?php <br> //PHP code goes here <br> ?&gt;:
+                <p>define(name, value, case-insensitive)</p>
             </div>
-            <p>The default file extension for PHP files is ".php".</p>
-            <p>A PHP file normally contains HTML tags, and some PHP scripting code.</p>
-            <p>Below, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP function
-                "echo" to output the
-                text "Hello World!" on a web page:</p>
+            <p>Parameters:</p>
+            <ul class="mb-5">
+                <li>name: Specifies the name of the constant</li>
+                <li>value: Specifies the value of the constant</li>
+                <li>case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false
+                </li>
+            </ul>
             <div class="example mb-5">
                 <h2>Example</h2>
+                <p>Create a constant with a case-sensitive name:</p>
                 <div class="code-examples">
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>!DOCTYPE<span
-                            class="attributecolor"
-                            style="box-sizing: inherit; color: red"><span>&nbsp;</span>html</span><span class="tagcolor"
-                            style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                    <span class="phptagcolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">&lt;?php</span>
                     <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>html<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>body<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>h1<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
                     <span
-                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">My
-                        first PHP page</span>
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/h1<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">define(</span>
+                    <span class="phpstringcolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">"GREETING"</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">,<span>&nbsp;</span></span>
+                    <span class="phpstringcolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">"Welcome
+                        to W3Schools.com!"</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">);</span>
                     <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span class="phpkeywordcolor"
+                        style="box-sizing: inherit; color: mediumblue; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">echo</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)"><span>&nbsp;</span>GREETING;</span>
                     <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="phpcolor"
-                        style="box-sizing: inherit; color: black; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="phptagcolor" style="box-sizing: inherit; color: red">&lt;?php</span><br
-                            style="box-sizing: inherit" />
-                        <span class="phpkeywordcolor"
-                            style="box-sizing: inherit; color: mediumblue">echo</span><span>&nbsp;</span><span
-                            class="phpstringcolor" style="box-sizing: inherit; color: brown">"Hello World!"</span>;<br
-                            style="box-sizing: inherit" />
-                        <span class="phptagcolor" style="box-sizing: inherit; color: red">?&gt;</span></span>
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/body<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/html<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span class="phptagcolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">?&gt;</span>
 
                 </div>
-
             </div>
-            <p><strong>Note:</strong> PHP statements end with a semicolon (;)</p>
-            <a href="Intro.html" class='btn'>Previous</a>
-            <a href="Comments.html" class="btn">Next</a>
+
+            <div class="example mb-5">
+                <h2>Example</h2>
+                <p>Create a constant with a case-insensitive name:</p>
+                <div class="code-examples">
+                    <span class="phptagcolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">&lt;?php</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">define(</span>
+                    <span class="phpstringcolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">"GREETING"</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">,<span>&nbsp;</span></span>
+                    <span class="phpstringcolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">"Welcome
+                        to W3Schools.com!"</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">,
+                        true);</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span class="phpkeywordcolor"
+                        style="box-sizing: inherit; color: mediumblue; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">echo</span>
+                    <span
+                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)"><span>&nbsp;</span>greeting;</span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)" />
+                    <span class="phptagcolor"
+                        style="box-sizing: inherit; color: red; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">?&gt;</span>
+
+                </div>
+            </div>
+            <a href="Strings.html" class='btn'>Previous</a>
+            <a href="../Pages/index.html" class="home"><i class="fa-solid fa-house"></i>Home</a>
+
         </div>
 
 

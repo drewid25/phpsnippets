@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto ">
                         <a href="../Pages/index.html" class="home" style="margin-right:1rem;"><i class=" fa-solid
-                                                                                                fa-house"></i>Home</a>
+                                                                        fa-house"></i>Home</a>
 
                         <form action="" class="d-flex">
                             <input type="text" style="margin-right:1rem;">
@@ -71,6 +71,7 @@
     <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive"
         aria-labelledby="offcanvasResponsiveLabel">
         <div class="offcanvas-header">
+
             <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas"
                 data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
         </div>
@@ -78,7 +79,7 @@
             <ul>
 
                 <li><a href="../Pages/index.html" class="home" style="margin-right:1rem;"><i class=" fa-solid
-                                                        fa-house"></i>Home</a></a></li>
+                                            fa-house"></i>Home</a></a></li>
                 <li><a href="../Pages/installation.html">Installation</a></li>
                 <li><a href="../Pages/getstarted.html">Get Started</a></li>
                 <li><a href="#">Tutorial</a></li>
@@ -111,6 +112,8 @@
                     <a href="../tutorial/Constants.html">PHP Constants</a>
                 </li>
 
+
+
             </ul>
         </div>
     </div>
@@ -125,19 +128,19 @@
                     <li class="menu-item ">
                         <a href="../tutorial/Intro.html">PHP Intro</a>
                     </li>
+                    <li class="menu-item">
+                        <a href="../tutorial/Syntax.html">PHP Syntax</a>
+                    </li>
                     <li class="menu-item nav-active">
-                        <a href="#">PHP Syntax</a>
+                        <a href="#">PHP Comments</a>
                     </li>
                     <li class="menu-item ">
-                        <a href="../tutorial/Comments.html">PHP Comments</a>
-                    </li>
-                    <li class="menu-item">
                         <a href="../tutorial/Variables.html">PHP Variables</a>
                     </li>
                     <li class="menu-item ">
                         <a href="../tutorial/VariableScope.html">PHP Variables Scope</a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item ">
                         <a href="../tutorial/EchoPrint.html">PHP Echo and Print</a>
                     </li>
                     <li class="menu-item ">
@@ -152,29 +155,39 @@
                     </li>
 
 
+
+
+
+
                 </ul>
 
             </ul>
         </div>
         <div class="col-lg-10 col-sm-12 text-content">
 
-            <h1 class="mb-5">PHP Syntax</h1>
+            <h1 class="mb-5">PHP Comments</h1>
+            <h2 class="mb-5">Comments in PHP</h2>
 
-            <p>A PHP script is executed on the server, and the plain HTML result is sent back to the browser.</p>
+            <p>A line of PHP code that is not run as part of the program is referred to as a comment.<br> It exists just
+                to
+                be read by a
+                person who is studying the code.
 
-            <p>A PHP script starts with &lt?php and ends with ?&gt;:
-
+                <br>One can utilize comments for:
             </p>
-            <div class="example mb-5">
-                <p> &lt?php <br> //PHP code goes here <br> ?&gt;:
-            </div>
-            <p>The default file extension for PHP files is ".php".</p>
-            <p>A PHP file normally contains HTML tags, and some PHP scripting code.</p>
-            <p>Below, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP function
-                "echo" to output the
-                text "Hello World!" on a web page:</p>
+
+            <ul>
+                <li>Let others understand your code</li>
+                <li>Remind yourself of what you accomplished. Most programmers have had to rediscover <br>what they
+                    accomplished after returning
+                    to their own work a year or two later.<br> Comments serve as a reminder of your thoughts at the time
+                    you
+                    authored the code.</li>
+            </ul>
+            <p>PHP supports several ways of commenting:</p>
             <div class="example mb-5">
                 <h2>Example</h2>
+                <p>Syntax for single-line comments</p>
                 <div class="code-examples">
                     <span class="tagnamecolor"
                         style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
@@ -198,30 +211,16 @@
                         style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
                     <br
                         style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>h1<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
-                    <span
-                        style=" font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px; background-color: rgb(255, 255, 255)">My
-                        first PHP page</span>
-                    <span class="tagnamecolor"
-                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/h1<span
-                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
-                    <br
-                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
                     <span class="phpcolor"
                         style="box-sizing: inherit; color: black; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
                             class="phptagcolor" style="box-sizing: inherit; color: red">&lt;?php</span><br
                             style="box-sizing: inherit" />
-                        <span class="phpkeywordcolor"
-                            style="box-sizing: inherit; color: mediumblue">echo</span><span>&nbsp;</span><span
-                            class="phpstringcolor" style="box-sizing: inherit; color: brown">"Hello World!"</span>;<br
-                            style="box-sizing: inherit" />
-                        <span class="phptagcolor" style="box-sizing: inherit; color: red">?&gt;</span></span>
+                        <span class="commentcolor" style="box-sizing: inherit; color: green">// This is a single-line
+                            comment<br style="box-sizing: inherit" />
+                        </span><br style="box-sizing: inherit" />
+                        <span class="commentcolor" style="box-sizing: inherit; color: green"># This is also a
+                            single-line comment<br style="box-sizing: inherit" />
+                        </span><span class="phptagcolor" style="box-sizing: inherit; color: red">?&gt;</span></span>
                     <br
                         style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
                     <br
@@ -237,12 +236,132 @@
                             class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/html<span
                             class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
 
+
+                </div>
+            </div>
+            <div class="example mb-5">
+                <h2>Example</h2>
+                <p>Syntax for multiple-line comments:</p>
+                <div class="code-examples">
+                    ?php
+                    /*
+                    This is a multiple-lines comment block
+                    that spans over multiple
+                    lines
+                    */
+                    ?
+                    <p><br />
+                    </p>
+                    <p><span class="tagnamecolor"
+                            style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>!DOCTYPE<span
+                                class="attributecolor"
+                                style="box-sizing: inherit; color: red"><span>&nbsp;</span>html</span><span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span><br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <span class="tagnamecolor"
+                            style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>html<span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span><br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <span class="tagnamecolor"
+                            style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>body<span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span><br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <span class="phpcolor"
+                            style="box-sizing: inherit; color: black; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                                class="phptagcolor" style="box-sizing: inherit; color: red">&lt;?php</span><br
+                                style="box-sizing: inherit" />
+                            <span class="commentcolor" style="box-sizing: inherit; color: green">/*<br
+                                    style="box-sizing: inherit" />
+                                This is a multiple-lines comment block<br style="box-sizing: inherit" />
+                                that spans over multiple<br style="box-sizing: inherit" />
+                                lines<br style="box-sizing: inherit" />
+                                */</span><br style="box-sizing: inherit" />
+                            <span class="phptagcolor" style="box-sizing: inherit; color: red">?&gt;</span></span><br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <span class="tagnamecolor"
+                            style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/body<span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span><br
+                            style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                        <span class="tagnamecolor"
+                            style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/html<span
+                                class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span><br />
+                    </p>
+
                 </div>
 
             </div>
-            <p><strong>Note:</strong> PHP statements end with a semicolon (;)</p>
-            <a href="Intro.html" class='btn'>Previous</a>
-            <a href="Comments.html" class="btn">Next</a>
+            <div class="example mb-5">
+                <h2>Example</h2>
+                <p>Using comments to leave out parts of the code</p>
+                <div class="code-examples">
+                    <span class="tagnamecolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>!DOCTYPE<span
+                            class="attributecolor"
+                            style="box-sizing: inherit; color: red"><span>&nbsp;</span>html</span><span class="tagcolor"
+                            style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <span class="tagnamecolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>html<span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <span class="tagnamecolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>body<span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <span class="phpcolor"
+                        style="box-sizing: inherit; color: black; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                            class="phptagcolor" style="box-sizing: inherit; color: red">&lt;?php</span><br
+                            style="box-sizing: inherit" />
+                        <span class="commentcolor" style="box-sizing: inherit; color: green">// You can also use
+                            comments to leave out parts
+                            of a code line<br style="box-sizing: inherit" />
+                        </span>$x =<span>&nbsp;</span><span class="phpnumbercolor"
+                            style="box-sizing: inherit; color: red">5</span><span>&nbsp;</span><span
+                            class="commentcolor" style="box-sizing: inherit; color: green">/* + 15
+                            */</span><span>&nbsp;</span>+<span>&nbsp;</span><span class="phpnumbercolor"
+                            style="box-sizing: inherit; color: red">5</span>;<br style="box-sizing: inherit" />
+                        <span class="phpkeywordcolor"
+                            style="box-sizing: inherit; color: mediumblue">echo</span><span>&nbsp;</span>$x;<br
+                            style="box-sizing: inherit" />
+                        <span class="phptagcolor" style="box-sizing: inherit; color: red">?&gt;</span></span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <span class="tagnamecolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/body<span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&gt;</span></span>
+                    <br
+                        style="box-sizing: inherit; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px" />
+                    <span class="tagnamecolor"
+                        style="box-sizing: inherit; color: brown; font-family: Consolas, Menlo, &quot;courier new&quot;, monospace; font-size: 15px"><span
+                            class="tagcolor" style="box-sizing: inherit; color: mediumblue">&lt;</span>/html</span>
+
+
+                </div>
+            </div>
+
+
+            <a href="Syntax.html" class='btn'>Previous</a>
+            <a href="Variables.html" class="btn">Next</a>
         </div>
 
 
